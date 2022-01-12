@@ -5,17 +5,24 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Movie from './components/Movie';
 import NotFound from './components/NotFound';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+background-color: var(--darkGrey);
+`;
 
 
 const  App = () => (
      <Router>
-       <Header/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/:movieId' element={<Movie/>}/>
-          <Route path='/*' element={<NotFound/>}/>
-        </Routes>
-       <GlobalStyle/>
+       <Wrapper>
+        <Header/>
+         <Routes>
+           <Route path='/' element={<Home/>}/>
+           <Route path='/:movieId' element={<Movie/>}/>
+           <Route path='/*' element={<NotFound/>}/>
+         </Routes>
+        <GlobalStyle/>
+       </Wrapper>
      </Router>
 );
 

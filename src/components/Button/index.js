@@ -1,11 +1,13 @@
 import React from "react";
 
-import { Wrapper } from "./Button.styles";
+import { Wrapper, Content } from "./Button.styles";
 
 const Button = ({callback, text}) => (
-      <Wrapper type="button" onClick={callback}>
+    <Wrapper>
+      <Content type="button" onClick={callback}>
           {text}
-      </Wrapper>
+      </Content>
+    </Wrapper>
 );
 
 export default Button;

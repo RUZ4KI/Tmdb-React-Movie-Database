@@ -14,7 +14,7 @@ import { useHomeFetch } from "../hooks/useHomeFetch";
 
 const Home = () => {
 
-    const {
+const {
        state,
        loading,
        error,

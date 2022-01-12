@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.button`
-display: block;
-background: var( --darkGrey);
+export const Wrapper = styled.div`
+display: flex;
+`;
+
+export const Content = styled.button`
+background: var( --medGrey);
 width: 25%;
 min-width: 200px;
 height: 60px;
